@@ -27,10 +27,9 @@ body {
 .menu {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
     position: absolute;
     left: 40vw;
-    top: 45vh;
+    top: 25vh;
 }
 
 #games, #about, #updates, #credits {
@@ -42,4 +41,5 @@ body {
     outline-width: 2px;
     width: 25vw;
     height: 10vh;
+    margin-top: 30px;
 }
