@@ -1,9 +1,12 @@
 /* apply this file ONLY to main pages that need to have topbar etc. */
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .topbar {
     width: 100vw;
     height: 10vh;
-    background-color: #373e8a;
-    padding: 0;
-    font-size: 0px;
+    background-color: #373e8a;;
 }
