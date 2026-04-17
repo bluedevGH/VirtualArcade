@@ -17,5 +17,5 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
     text-align: center;
-    align-items: center;
+    vertical-align: middle;
 }
