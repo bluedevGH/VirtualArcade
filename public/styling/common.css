@@ -1,9 +1,10 @@
+
 /* apply this file ONLY to main pages that need to have topbar etc. */
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #212553;
+    background-color: #6a4141;
 }
 
 .topbar {
@@ -15,7 +16,7 @@ body {
 }
 
 .topbar p {
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     line-height: 0vh;
@@ -33,7 +34,7 @@ body {
 }
 
 .menu button{
-    background-color: white ;
+    background-color: rgb(29, 50, 110) ;
     outline-color: white;
     color: white;
     text-shadow: 0px 0px 10px #ffffff;
