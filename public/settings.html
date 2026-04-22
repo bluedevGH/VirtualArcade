@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Virtual Arcade - Settings</title>
-        <link rel="favicon" href="images/Placeholder.png"> <!--fix this when its important-->
-        <link rel="stylesheet" href="styling/common.css">
+        <title>Virtual Arcade - Index</title>
+        <link rel="icon" href="images/Placeholder.png"> <!--fix this when its important-->
+        <link rel="stylesheet" href="styling/themes.css">
+        <link rel="stylesheet" href="styling/settings.css">
     </head>
 
     <body>
@@ -12,5 +13,21 @@
                 <p><strong>Virtual Arcade</strong></p>
             </div>
         </header>
+
+        <nav class="options">
+            <button id="Theme">Theme</button>
+            <button id="Sound">Sound</button>
+            <button id="Accessibility">Accessibility</button>
+        </nav>
+        
+        <section id="theme-settings">
+            <p id="themetext">Choose a theme:</p>
+            <div id="themeoptions">
+                <button id="light">Light</button>
+                <button id="dark">Dark</button>
+            </div>
+        </section>
+
+        <script src="src/themes.js"></script>
     </body>
 </html> 
