@@ -1,46 +1,68 @@
+/* === Light Theme === */
+:root,
+body.theme-default {
+    --color-bg: #f5f7fa;
+    --color-text: #1a1a2e;
+    --color-text-muted: #5a6a7a;
+    --color-primary: #3a86ff;
+    --color-primary-hover: #2563eb;
+    --color-button-bg: #3a86ff;
+    --color-button-text: #ffffff;
+    --color-header-bg: #ffffff;
+    --color-border: #e2e8f0;
+}
 
-/* apply this file ONLY to main pages that need to have topbar etc. */
+/* === Dark Theme === */
+body.theme-dark {
+    --color-bg: #0d1b2a;
+    --color-text: #e8f0fe;
+    --color-text-muted: #8aa0b8;
+    --color-primary: #4da6ff;
+    --color-primary-hover: #74baff;
+    --color-button-bg: #1a3a5c;
+    --color-button-text: #4da6ff;
+    --color-header-bg: #0a1520;
+    --color-border: #1e3a52;
+}
 
+/* === Elements === */
 body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #6a4141;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.topbar {
-    width: 100vw;
-    height: 8vh;
-    background-color: #373e8a;
-    overflow: hidden;
-    align-items: center;
+header {
+    background-color: var(--color-header-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 2rem;
 }
 
-.topbar p {
-    color: rgb(255, 255, 255);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    line-height: 0vh;
-    text-shadow: 0px 0px 10px #ffffff;
-    position: absolute;
-    left: 15px;
+header p {
+    margin: 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-primary);
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 40vw;
-    top: 25vh;
-}
-
-.menu button{
-    background-color: rgb(29, 50, 110) ;
-    outline-color: white;
-    color: white;
-    text-shadow: 0px 0px 10px #ffffff;
-    outline-width: 2px;
-    width: 25vw;
-    height: 10vh;
-    margin-top: 30px;
+button {
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text);
+    border: 1px solid var(--color-primary);
+    padding: 0.6rem 1.4rem;
+    font-size: 0.85rem;
+    font-family: inherit;
+    letter-spacing: 0.08em;
+    cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: var(--color-primary);
+    color: #ffffff;
 }

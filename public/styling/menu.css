@@ -1,0 +1,6 @@
+.menuholder {
+    display: flex;
+    flex-direction: column;
+}
+
+/* fix this */
