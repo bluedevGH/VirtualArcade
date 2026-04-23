@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Virtual Arcade - Index</title>
+        <link rel="icon" href="images/Placeholder.png"> <!--fix this when its important-->
+        <link rel="stylesheet" href="styling/themes.css">
+        <link rel="stylesheet" href="styling/settings.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="topbar">
+                <p><strong>Virtual Arcade</strong></p>
+            </div>
+        </header>
+
+        <nav class="options">
+            <button id="Theme">Theme</button>
+            <button id="Sound">Sound</button>
+            <button id="Accessibility">Accessibility</button>
+        </nav>
+        
+        <section id="theme-settings">
+            <p id="themetext">Choose a theme:</p>
+            <div id="themeoptions">
+                <button id="light">Light</button>
+                <button id="dark">Dark</button>
+                <button id="navy">Navy</button>
+            </div>
+        </section>
+
+        <script type="module" src="src/cookies.js">s</script>
+        <script src="src/themes.js" type="module"></script>
+    </body>
+</html> 
