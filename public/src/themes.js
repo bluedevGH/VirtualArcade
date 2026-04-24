@@ -1,7 +1,7 @@
 console.log("hi im sprint and going") // just to make sure script loads
+checkCookie(); // uses theme cookie to set theme of site based on last selection
 
 document.addEventListener("DOMContentLoaded", function() {
-    checkCookie(); // checks for theme cookie once content is loaded, if it is there set the theme
     document.querySelector('body').addEventListener('click', (e) => {
         switch (e.target.id) {
             case 'light':
@@ -28,6 +28,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-/**
- * need to make it so that it loads based on cookie value, not class names hardcoded
- */

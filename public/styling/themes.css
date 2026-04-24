@@ -46,7 +46,6 @@ body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s;
     overflow: hidden;
 }
 
@@ -78,7 +77,6 @@ button {
     letter-spacing: 0.08em;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.2s, color 0.2s;
     touch-action: manipulation; /* this line removes transition delay for touchscreen devices only on buttons*/
 }
 
